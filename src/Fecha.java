@@ -25,7 +25,7 @@ public class Fecha {
                 diaSgte = 1;
                 mesSgte += 1;
             }
-        } else if (dia==28 && mes ==2){
+        } else if (dia==28 && mes==2){
             diaSgte = 1;
             mesSgte = 3;
         } else {
@@ -35,7 +35,7 @@ public class Fecha {
             mesSgte = 1;
             anhoSgte += 1;
         }
-    return diaSgte + "-" + mesSgte + "-" + anhoSgte;
+        return diaSgte + "-" + mesSgte + "-" + anhoSgte;
     }
 
     private static boolean tiene30dias(int mes) {

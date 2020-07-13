@@ -6,7 +6,7 @@ public class Calculadora {
         Scanner in = new Scanner(System.in);
         System.out.println("ingrese una nota");
         double n1 = Double.parseDouble(in.nextLine());
-        if (n1 < 1 || n1 > 7) {
+        if (!(n1>=1 && n1<=7)) {
             System.out.println("nota invalida");
             System.exit(0);
         }
