@@ -29,7 +29,7 @@ public class FraccionMain {
             resultado = x.division(y);
         } else {
             System.out.println("Opción inválida");
-            System.exit(-1);
+            return;
         }
         System.out.println("Resultado: "+resultado.imprimir());
     }

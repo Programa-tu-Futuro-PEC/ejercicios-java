@@ -2,41 +2,41 @@ package clases;
 
 public class Fraccion {
 
-    int numerador;
-    int denominador;
+    private int numerador;
+    private int denominador;
 
-    Fraccion(int numerador, int denominador){
+    public Fraccion(int numerador, int denominador){
         this.numerador = numerador;
         this.denominador = denominador;
     }
 
-    boolean esMenorQue(Fraccion f){
+    public boolean esMenorQue(Fraccion f){
         return this.numerador * f.denominador < this.denominador * f.numerador;
     }
 
-    String imprimir(){
+    public String imprimir(){
         return this.numerador + "/" + this.denominador;
     }
 
-    Fraccion suma(Fraccion f){
+    public Fraccion suma(Fraccion f){
         int numerador = this.numerador*f.denominador + this.denominador * f.numerador;
         int denominador = this.denominador * f.denominador;
         return new Fraccion(numerador, denominador);
     }
 
-    Fraccion resta(Fraccion f){
+    public Fraccion resta(Fraccion f){
         int numerador = this.numerador*f.denominador - this.denominador * f.numerador;
         int denominador = this.denominador * f.denominador;
         return new Fraccion(numerador, denominador);
     }
 
-    Fraccion producto(Fraccion f){
+    public Fraccion producto(Fraccion f){
         int numerador = this.numerador*f.numerador;
         int denominador = this.denominador * f.denominador;
         return new Fraccion(numerador, denominador);
     }
 
-    Fraccion division(Fraccion f){
+    public Fraccion division(Fraccion f){
         int numerador = this.numerador*f.denominador;
         int denominador = this.denominador * f.numerador;
         return new Fraccion(numerador, denominador);

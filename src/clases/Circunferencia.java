@@ -2,19 +2,22 @@ package clases;
 
 public class Circunferencia {
     protected double radio;
+    private double PI = 3.14159264;
+
+    public Circunferencia(double radio) {
+        this.radio = radio;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
 
     public double perimetro(){
-        Circunferencia x = new Circunferencia();
-        return 2 * Math.PI *radio;
+        return 2 * PI * radio;
     }
-
-    public void test(){
-        try {
-            Thread.sleep(1000); // lanza una excepción
-        }catch (InterruptedException ex){
-            //código para capturar excepción lanzada
-        }
-    }
-
 
 }

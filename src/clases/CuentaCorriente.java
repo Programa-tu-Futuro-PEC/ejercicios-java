@@ -2,8 +2,16 @@ package clases;
 
 public class CuentaCorriente {
 
-    String cliente;
-    int saldo;
+    private String cliente;
+    private int saldo;
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
 
     public CuentaCorriente(String cliente, int saldo) {
         this.cliente = cliente;

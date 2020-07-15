@@ -1,11 +1,13 @@
 package clases;
 
-public class Circulo extends Circunferencia implements Figura {
+public class Circulo extends Circunferencia implements Figura{
 
-    public double area(){
-        return Math.PI * radio;
+    public Circulo(double radio) {
+        super(radio);
     }
 
-
+    public double area(){
+        return Math.PI * Math.pow(this.radio,2);
+    }
 
 }
