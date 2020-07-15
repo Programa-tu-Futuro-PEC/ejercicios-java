@@ -6,8 +6,13 @@ public class Circulo extends Circunferencia implements Figura{
         super(radio);
     }
 
-    public double area(){
-        return Math.PI * Math.pow(this.radio,2);
+    @Override
+    public double sector() {
+        return 0;
     }
 
+    @Override
+    public double area() {
+        return 0;
+    }
 }

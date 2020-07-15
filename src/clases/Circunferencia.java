@@ -1,6 +1,6 @@
 package clases;
 
-public class Circunferencia {
+public abstract class Circunferencia implements Figura {
     protected double radio;
     private double PI = 3.14159264;
 
@@ -19,5 +19,7 @@ public class Circunferencia {
     public double perimetro(){
         return 2 * PI * radio;
     }
+
+    public abstract double sector();
 
 }
