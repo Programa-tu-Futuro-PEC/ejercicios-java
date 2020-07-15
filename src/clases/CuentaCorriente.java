@@ -1,9 +1,10 @@
 package clases;
 
-public class CuentaCorriente {
+public class CuentaCorriente implements Cuenta{
 
     private String cliente;
     private int saldo;
+    private int lineaDeCredito;
 
     public String getCliente() {
         return cliente;
@@ -13,25 +14,28 @@ public class CuentaCorriente {
         return saldo;
     }
 
-    public CuentaCorriente(String cliente, int saldo) {
+    public CuentaCorriente(String cliente, int saldo, int lineaDeCredito) {
         this.cliente = cliente;
         this.saldo = saldo;
+        this.lineaDeCredito = lineaDeCredito;
     }
 
-    void deposito(int monto){
+    @Override
+    public void deposito(int monto){
         this.saldo += monto;
     }
 
-    void giro(int monto){
-        if (monto>this.saldo)
-            return;
-        this.saldo -= monto;
+    @Override
+    public void giro(int monto){
+        if (monto<=this.saldo+lineaDeCredito)
+            this.saldo-=monto;
     }
 
-    void transferencia(int monto, CuentaCorriente destino){
-        if (monto>this.saldo) return;
+    @Override
+    public void transferencia(int monto, Cuenta destino) {
+        if (monto>this.saldo+lineaDeCredito) return;
         this.saldo -= monto;
-        destino.saldo += monto;
+        destino.deposito(monto);
     }
 
 }
