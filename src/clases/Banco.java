@@ -3,7 +3,7 @@ package clases;
 import clases.exception.SobregiroException;
 
 public class Banco {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SobregiroException {
         CuentaCorriente c1 = new CuentaCorriente("juanito", 20000, 0);
         CuentaCorriente c2 = new CuentaCorriente("pablito", 20000, 0);
 
@@ -11,11 +11,7 @@ public class Banco {
         System.out.println("pablito: "+c2.getSaldo());
 
         c1.deposito(5000);
-        try {
-            c2.giro(1000);
-        } catch (SobregiroException e) {
-            System.out.println(e.getMessage());
-        }
+        c2.giro(100000);
 
         System.out.println("juanito: "+c1.getSaldo());
         System.out.println("pablito: "+c2.getSaldo());
