@@ -11,13 +11,13 @@ public class Banco {
         System.out.println("pablito: "+c2.getSaldo());
 
         c1.deposito(5000);
-        c2.giro(100000);
+        c2.giro(1000000);
 
         System.out.println("juanito: "+c1.getSaldo());
         System.out.println("pablito: "+c2.getSaldo());
 
         try {
-            c1.transferencia(10000, c2);
+            c1.transferencia(1000000, c2);
         } catch (SobregiroException e) {
             System.out.println(e.getMessage());
         }

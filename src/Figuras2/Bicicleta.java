@@ -1,5 +1,7 @@
 package Figuras2;
 
+import java.util.Objects;
+
 public class Bicicleta implements Vehiculo{
 
     int posicion = 0;
@@ -23,5 +25,18 @@ public class Bicicleta implements Vehiculo{
     @Override
     public String tipoDeVehiculo() {
         return "Bicicleta";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Bicicleta)) return false;
+        Bicicleta bicicleta = (Bicicleta) o;
+        return posicion == bicicleta.posicion;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(posicion);
     }
 }

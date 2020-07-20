@@ -3,6 +3,8 @@ package clases;
 import clases.exception.IllegalAmountException;
 import clases.exception.SobregiroException;
 
+import java.util.Objects;
+
 public class CuentaCorriente implements Cuenta{
 
     private String cliente;
@@ -50,4 +52,18 @@ public class CuentaCorriente implements Cuenta{
         destino.deposito(monto);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CuentaCorriente)) return false;
+        CuentaCorriente that = (CuentaCorriente) o;
+        return saldo == that.saldo &&
+                lineaDeCredito == that.lineaDeCredito &&
+                cliente.equals(that.cliente);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cliente, saldo, lineaDeCredito);
+    }
 }
