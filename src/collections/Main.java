@@ -1,28 +1,36 @@
 package collections;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        List<String> palabras = new ArrayList<>();
-        while (true){
-            System.out.println("ingrese palabra o STOP");
-            String palabra = in.nextLine();
-            if (palabra.equalsIgnoreCase("stop")){
-                break;
-            }
-            palabras.add(palabra);
-        }
-
-        String palabraMasLarga = "";
-        for (String p : palabras) {
-            if (p.length()> palabraMasLarga.length()){
-                palabraMasLarga = p;
-            }
-        }
-        System.out.println(palabraMasLarga);
+        List<Integer> numeros = new ArrayList<>();
+        numeros.add(1); numeros.add(2); numeros.add(3);
+        numeros.add(4); numeros.add(5);
+        System.out.println(numeros);
+        System.out.println(invertirLista(numeros));
+        Map<String, String> nombres = new HashMap<>();
+        nombres.put("juan", "perez");
+        nombres.put("ana", "gonzalez");
+        nombres.put("roberto", "carlos");
+        System.out.println(nombres);
+        System.out.println(invertirMapa(nombres));
     }
+
+    static List<Integer> invertirLista(List<Integer> lista){
+        List<Integer> resultado = new ArrayList<>();
+        for (int i = lista.size()-1; i >= 0; i--) {
+            resultado.add(lista.get(i));
+        }
+        return resultado;
+    }
+
+    static Map<String, String> invertirMapa(Map<String, String> dicc){
+        Map<String, String> resultado = new HashMap<>();
+        for (String llave : dicc.keySet()) {
+            resultado.put(dicc.get(llave), llave);
+        }
+        return resultado;
+    }
+
 }

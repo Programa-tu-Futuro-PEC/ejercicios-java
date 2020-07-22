@@ -21,6 +21,7 @@ public class Listas {
         System.out.println(diccionarioVehiculos.get("Bicicleta").acelerar(20));
 
         for (String llave : diccionarioVehiculos.keySet()) {
+            System.out.println(llave);
             System.out.println(diccionarioVehiculos.get(llave));
         }
 
