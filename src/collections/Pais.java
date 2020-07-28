@@ -1,11 +1,13 @@
 package collections;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Pais {
     private String nombre;
     private String capital;
     private int poblacion;
+    private List<Pais> paisesVecinos;
 
     public Pais(String nombre, String capital, int poblacion) {
         this.nombre = nombre;
