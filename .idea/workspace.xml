@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262573e5-3b8a-41e8-9f3b-c96b218fcdc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/jdbc/ConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collections/BorrarMayorDiccionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/BorrarMayorDiccionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collections/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/Pais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hola Mundo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Mundo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../submissions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mssql-jdbc-8.2.2.jre8.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,24 +43,40 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\scfer\Documents\Universidad\Docencia\Diplomado\Introducción a la Programación\Hola Mundo\lib" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BorrarMayorDiccionario">
+  <component name="RunManager" selected="Application.ConnectionTest">
     <configuration name="BorrarMayorDiccionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collections.BorrarMayorDiccionario" />
       <module name="Hola Mundo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.ConnectionTest" />
+      <module name="Hola Mundo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,26 +123,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="celula.Main" />
-      <module name="Hola Mundo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="celula.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConnectionTest" />
         <item itemvalue="Application.BorrarMayorDiccionario" />
         <item itemvalue="Application.Contador" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Listas" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +165,7 @@
       <workItem from="1595336801944" duration="12303000" />
       <workItem from="1595422766311" duration="7490000" />
       <workItem from="1595709062092" duration="49000" />
+      <workItem from="1596118618987" duration="8454000" />
     </task>
     <servers />
   </component>
@@ -177,6 +181,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="362" y="76" key="#Project_Structure/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594042694918" />
+    <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596122321263">
+      <screen x="2460" y="-768" width="1366" height="738" />
+    </state>
+    <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596122321263" />
     <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser" timestamp="1595423813500">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -190,30 +198,31 @@
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="2901" y="-528" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1594390822846" />
-    <state x="550" y="172" key="FileChooserDialogImpl" timestamp="1595709107701">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2949" y="-616" key="FileChooserDialogImpl" timestamp="1596120985434">
+      <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="550" y="172" key="FileChooserDialogImpl/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1595709107701" />
-    <state width="1324" height="202" key="GridCell.Tab.0.bottom" timestamp="1595446866351">
+    <state x="2949" y="-616" key="FileChooserDialogImpl/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596120985434" />
+    <state width="1324" height="154" key="GridCell.Tab.0.bottom" timestamp="1596126964324">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="202" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1595446866351" />
-    <state width="1324" height="202" key="GridCell.Tab.0.center" timestamp="1595446866351">
+    <state width="1324" height="154" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964324" />
+    <state width="1324" height="154" key="GridCell.Tab.0.center" timestamp="1596126964323">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="202" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1595446866351" />
-    <state width="1324" height="202" key="GridCell.Tab.0.left" timestamp="1595446866351">
+    <state width="1324" height="154" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964323" />
+    <state width="1324" height="154" key="GridCell.Tab.0.left" timestamp="1596126964323">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="202" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1595446866351" />
-    <state width="1324" height="202" key="GridCell.Tab.0.right" timestamp="1595446866351">
+    <state width="1324" height="154" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964323" />
+    <state width="1324" height="154" key="GridCell.Tab.0.right" timestamp="1596126964324">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="202" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1595446866351" />
+    <state width="1324" height="154" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964324" />
     <state width="1324" height="169" key="GridCell.Tab.1.bottom" timestamp="1595352756944">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -234,11 +243,15 @@
     </state>
     <state width="1493" height="184" key="GridCell.Tab.1.right/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594305971871" />
     <state width="1324" height="169" key="GridCell.Tab.1.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1595352756943" />
-    <state x="2708" y="-768" key="SettingsEditor" timestamp="1594822049440">
+    <state x="2744" y="-679" key="RollbackChangesDialog" timestamp="1596120813572">
+      <screen x="2460" y="-768" width="1366" height="738" />
+    </state>
+    <state x="2744" y="-679" key="RollbackChangesDialog/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596120813572" />
+    <state x="2708" y="-768" key="SettingsEditor" timestamp="1596123223220">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="279" y="0" key="SettingsEditor/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594044339296" />
-    <state x="2708" y="-768" key="SettingsEditor/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1594822049440" />
+    <state x="2708" y="-768" key="SettingsEditor/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596123223220" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1594736778064">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
