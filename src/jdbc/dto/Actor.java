@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.dto;
 
 public class Actor {
     private String nombre;

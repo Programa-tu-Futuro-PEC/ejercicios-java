@@ -1,4 +1,7 @@
-package jdbc;
+package jdbc.dao;
+
+import jdbc.ConnectionManager;
+import jdbc.dto.Actor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

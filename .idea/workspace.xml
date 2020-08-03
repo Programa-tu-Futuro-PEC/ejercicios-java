@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262573e5-3b8a-41e8-9f3b-c96b218fcdc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jdbc/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/ActorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/BuscadorPelicula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/dao/PeliculaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/dao/PersonajeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/dto/Pelicula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/dto/Personaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/dto/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/ActorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/dao/ActorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +63,13 @@
       <recent name="collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.BuscadorPelicula">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdbc.App" />
       <module name="Hola Mundo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.*" />
+          <option name="PATTERN" value="jdbc.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.ConnectionTest" />
+    <configuration name="BuscadorPelicula" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.BuscadorPelicula" />
       <module name="Hola Mundo" />
       <extension name="coverage">
         <pattern>
@@ -100,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Contador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.Contador" />
+    <configuration name="ConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.ConnectionTest" />
       <module name="Hola Mundo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collections.*" />
+          <option name="PATTERN" value="jdbc.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,8 +116,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.Main" />
+    <configuration name="Contador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.Contador" />
       <module name="Hola Mundo" />
       <extension name="coverage">
         <pattern>
@@ -141,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BuscadorPelicula" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.ConnectionTest" />
         <item itemvalue="Application.BorrarMayorDiccionario" />
         <item itemvalue="Application.Contador" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +191,7 @@
       <workItem from="1596205782338" duration="5317000" />
       <workItem from="1596217145215" duration="69000" />
       <workItem from="1596383934443" duration="1784000" />
-      <workItem from="1596461860102" duration="1158000" />
+      <workItem from="1596461860102" duration="3116000" />
     </task>
     <servers />
   </component>
@@ -208,11 +211,11 @@
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596217177659" />
-    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser" timestamp="1596462180201">
+    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser" timestamp="1596466318893">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="575" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594492102272" />
-    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462180201" />
+    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596466318893" />
     <state x="2926" y="-509" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595423572301">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -226,26 +229,26 @@
     </state>
     <state x="550" y="172" key="FileChooserDialogImpl/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1595709107701" />
     <state x="2949" y="-616" key="FileChooserDialogImpl/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596120985434" />
-    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1596462690739">
+    <state width="1324" height="209" key="GridCell.Tab.0.bottom" timestamp="1596466720296">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690739" />
-    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1596462690738">
+    <state width="1324" height="209" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596466720296" />
+    <state width="1324" height="209" key="GridCell.Tab.0.center" timestamp="1596466720296">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690738" />
-    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1596462690738">
+    <state width="1324" height="209" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596466720296" />
+    <state width="1324" height="209" key="GridCell.Tab.0.left" timestamp="1596466720296">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690738" />
-    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1596462690738">
+    <state width="1324" height="209" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596466720296" />
+    <state width="1324" height="209" key="GridCell.Tab.0.right" timestamp="1596466720296">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690738" />
+    <state width="1324" height="209" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596466720296" />
     <state width="1324" height="169" key="GridCell.Tab.1.bottom" timestamp="1595352756944">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -292,9 +295,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="192" y="51" width="819" height="500" key="new project wizard/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1596385719178" />
-    <state x="2799" y="-219" key="run.anything.popup" timestamp="1594736714238">
+    <state x="2799" y="-219" key="run.anything.popup" timestamp="1596466299499">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
-    <state x="2799" y="-219" key="run.anything.popup/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1594736714238" />
+    <state x="2799" y="-219" key="run.anything.popup/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596466299499" />
   </component>
 </project>
