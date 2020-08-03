@@ -20,46 +20,33 @@ public class PeliculaDAO {
 
     public List<Pelicula> obtenerPeliculaPorNombre(String nombre) throws SQLException {
         String sql = "select nombre, año, calificacion from pelicula where nombre=?";
-        PreparedStatement ps = connection.prepareStatement(sql);
-        ps.setString(1, nombre);
-        ResultSet rs = ps.executeQuery();
-        List<Pelicula> peliculas = new LinkedList<>();
-        while (rs.next()){
-            Pelicula p = new Pelicula(
-              rs.getString("nombre"),
-              rs.getInt("año"),
-              rs.getDouble("calificacion")
-            );
-            peliculas.add(p);
-        }
-        return peliculas;
+        return obtenerResultados(sql, nombre);
     }
 
     public List<Pelicula> obtenerPeliculasPorActor(String nombreActor) throws SQLException {
         String sql = "select distinct nombre, año, calificacion " +
                 "from personaje, pelicula " +
                 "where año=p_año and nombre=p_nombre and a_nombre=?";
-        PreparedStatement ps = connection.prepareStatement(sql);
-        ps.setString(1, nombreActor);
-        ResultSet rs = ps.executeQuery();
-        List<Pelicula> peliculas = new LinkedList<>();
-        while (rs.next()){
-            Pelicula p = new Pelicula(
-                    rs.getString("nombre"),
-                    rs.getInt("año"),
-                    rs.getDouble("calificacion")
-            );
-            peliculas.add(p);
-        }
-        return peliculas;
+        return obtenerResultados(sql, nombreActor);
+    }
+
+    public List<Pelicula> obtenerPeliculaPorActorLike(String actorLike) throws SQLException {
+        String sql = "select distinct nombre, año, calificacion " +
+                "from personaje, pelicula " +
+                "where año=p_año and nombre=p_nombre and a_nombre like ?";
+        return obtenerResultados(sql, "%"+actorLike+"%");
     }
 
     public List<Pelicula> obtenerPeliculasPorPersonaje(String personaje) throws SQLException {
         String sql = "select distinct nombre, año, calificacion " +
                 "from personaje, pelicula " +
                 "where año=p_año and nombre=p_nombre and personaje=?";
+        return obtenerResultados(sql, personaje);
+    }
+
+    private List<Pelicula> obtenerResultados(String sql, String parametro) throws SQLException {
         PreparedStatement ps = connection.prepareStatement(sql);
-        ps.setString(1, personaje);
+        ps.setString(1, parametro);
         ResultSet rs = ps.executeQuery();
         List<Pelicula> peliculas = new LinkedList<>();
         while (rs.next()){
