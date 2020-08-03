@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262573e5-3b8a-41e8-9f3b-c96b218fcdc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jdbc/ConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/ActorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/ConnectionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hola Mundo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Mundo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/ConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mssql-jdbc-8.2.2.jre8.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,7 +46,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -57,7 +60,20 @@
       <recent name="collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConnectionTest">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.App" />
+      <module name="Hola Mundo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BorrarMayorDiccionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collections.BorrarMayorDiccionario" />
       <module name="Hola Mundo" />
@@ -97,19 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Listas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.Listas" />
-      <module name="Hola Mundo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collections.Main" />
       <module name="Hola Mundo" />
@@ -123,16 +126,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.ConnectionTest" />
         <item itemvalue="Application.BorrarMayorDiccionario" />
         <item itemvalue="Application.Contador" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Listas" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -165,12 +182,18 @@
       <workItem from="1595336801944" duration="12303000" />
       <workItem from="1595422766311" duration="7490000" />
       <workItem from="1595709062092" duration="49000" />
-      <workItem from="1596118618987" duration="8454000" />
+      <workItem from="1596118618987" duration="9109000" />
+      <workItem from="1596205102974" duration="335000" />
+      <workItem from="1596205546178" duration="44000" />
+      <workItem from="1596205782338" duration="5317000" />
+      <workItem from="1596217145215" duration="69000" />
+      <workItem from="1596383934443" duration="1784000" />
+      <workItem from="1596461860102" duration="1158000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2758" y="-713" key="#Getter_Template" timestamp="1594736576182">
@@ -181,15 +204,15 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="362" y="76" key="#Project_Structure/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594042694918" />
-    <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596122321263">
+    <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596217177659">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
-    <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596122321263" />
-    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser" timestamp="1595423813500">
+    <state x="2597" y="-744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596217177659" />
+    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser" timestamp="1596462180201">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="575" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594492102272" />
-    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1595423813500" />
+    <state x="2971" y="-662" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462180201" />
     <state x="2926" y="-509" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595423572301">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -203,26 +226,26 @@
     </state>
     <state x="550" y="172" key="FileChooserDialogImpl/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1595709107701" />
     <state x="2949" y="-616" key="FileChooserDialogImpl/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596120985434" />
-    <state width="1324" height="154" key="GridCell.Tab.0.bottom" timestamp="1596126964324">
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1596462690739">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="154" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964324" />
-    <state width="1324" height="154" key="GridCell.Tab.0.center" timestamp="1596126964323">
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690739" />
+    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1596462690738">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="154" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964323" />
-    <state width="1324" height="154" key="GridCell.Tab.0.left" timestamp="1596126964323">
+    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690738" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1596462690738">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="154" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964323" />
-    <state width="1324" height="154" key="GridCell.Tab.0.right" timestamp="1596126964324">
+    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690738" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1596462690738">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state width="1324" height="139" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594679313539" />
-    <state width="1324" height="154" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596126964324" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596462690738" />
     <state width="1324" height="169" key="GridCell.Tab.1.bottom" timestamp="1595352756944">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -247,11 +270,11 @@
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="2744" y="-679" key="RollbackChangesDialog/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596120813572" />
-    <state x="2708" y="-768" key="SettingsEditor" timestamp="1596123223220">
+    <state x="2708" y="-768" key="SettingsEditor" timestamp="1596217211686">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
     <state x="279" y="0" key="SettingsEditor/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594044339296" />
-    <state x="2708" y="-768" key="SettingsEditor/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596123223220" />
+    <state x="2708" y="-768" key="SettingsEditor/0.0.1536.834/2460.-768.1366.738@2460.-768.1366.738" timestamp="1596217211686" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1594736778064">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
@@ -265,10 +288,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="332" y="154" width="873" height="600" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594140142699" />
-    <state x="203" y="38" key="new project wizard" timestamp="1594043811827">
+    <state x="192" y="51" width="819" height="500" key="new project wizard" timestamp="1596385719178">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="203" y="38" key="new project wizard/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1594043811827" />
+    <state x="192" y="51" width="819" height="500" key="new project wizard/0.0.1536.834/2460.-768.1366.738@0.0.1536.834" timestamp="1596385719178" />
     <state x="2799" y="-219" key="run.anything.popup" timestamp="1594736714238">
       <screen x="2460" y="-768" width="1366" height="738" />
     </state>
