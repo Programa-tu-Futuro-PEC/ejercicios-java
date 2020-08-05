@@ -42,5 +42,4 @@ public class BuscadorPelicula {
             System.out.println(p.getNombre() + " ("+p.getAnho()+"): "+p.getCalificacion());
         }
     }
-
 }
