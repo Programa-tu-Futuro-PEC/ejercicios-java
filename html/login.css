@@ -1,0 +1,29 @@
+.main{
+    background-color: rgb(240, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login{
+    width: 60%;
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 0px 0px 6px 0px rgba(150,150,150,1);
+    padding: 2em;
+}
+
+button.send{
+    width: 100%;
+    color: ghostwhite;
+    background-color: #3C5D97;
+    border-width: 0px;
+    padding: 0.8em;
+}
+
+.login-form{
+    padding: 0.5em 0em;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.8em;
+}

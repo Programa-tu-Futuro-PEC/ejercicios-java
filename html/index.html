@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+   <head>
+      <title>T&iacute;tulo</title>
+      <link rel="stylesheet" href="estilos.css" type="text/css">
+   </head> 
+   <body id="contenido">
+       <h1 class="main">Programa tu Futuro</h1>
+       <hr>
+       <ul>
+        <li>60 alumnos</li>
+        <li>Desarrollo de wwefi</li>
+        <li>Creación de kwefnfi</li>
+        <li>100% gratis no fake</li>
+       </ul>
+       <a href="http://www.accenture.com">Inscríbete acá</a>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nulla erat. Nullam bibendum et orci dignissim consequat. Pellentesque tempus magna neque, sed sodales dolor accumsan quis. Duis sed tempus arcu, lobortis sollicitudin neque. Mauris et erat leo. Integer sit amet felis vitae neque tincidunt sodales. Maecenas tincidunt blandit tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus turpis sapien, mollis vehicula placerat quis, volutpat eget velit. </p>
+       <h1 class="secondary">Profesores</h1>
+       <table id="content">
+           <thead>
+               <th>Nombre</th>
+               <th>Apellido</th>
+               <th>Edad</th>
+               <th>Link</th>
+               <th>Eliminar</th>
+           </thead>
+           <tbody>
+              <tr>
+                <td>Sebastián</td>
+                <td>Ferrada</td>
+                <td>28</td>
+                <td><a href="http://www.facebook.com">facebook</a></td>
+                <td><button>Eliminar</button></td>
+              </tr>
+              <tr>
+                <td>Juan</td>
+                <td>Arriagada</td>
+                <td>35</td>
+              </tr> 
+              <tr>
+                  <td>holo</td>
+              </tr>
+           </tbody>
+       </table>
+       <hr>
+       <h1 class="secondary">Inscríbete</h1>
+       <form>
+           <div>
+               <label class="main">Nombre:</label>
+               <input class="shadow" type="password" name="nombre" placeholder="Tu Nombre" required>
+           </div>
+           <div>
+               <label for="correo">Correo Electrónico:</label>
+               <input class="shadow" type="email" name="correo" placeholder="ejemplo@mail.com" required>
+           </div>
+           <div>
+               <label for="telefono">Teléfono: +569</label>
+               <input class="shadow" type="tel" name="telefono" pattern="[0-9]{8}" placeholder="12345678">
+           </div>
+           <div>
+               <label for="comuna">Comuna:</label>
+               <select class="shadow" name="comuna" id="comuna">
+                   <option value="1">Santiago</option>
+                   <option value="2">Recoleta</option>
+                   <option value="3">La Pintana</option>
+               </select>
+           </div>
+           <div>
+               <label for="comentario">Comentarios:</label>
+               <textarea class="shadow" name="comentario" cols="30" rows="4"></textarea>
+           </div>
+           <button class="shadow" type="submit">Enviar</button>
+           <button class="shadow" type="reset">Limpiar datos</button>
+       </form>
+   </body>
+</html>

@@ -1,0 +1,29 @@
+ #content {
+    background-color: lightblue;
+ }
+
+ #contenido {
+    background-image: linear-gradient(red, yellow);
+     color: cornsilk;
+ }
+
+ h1.main {
+    color: white;
+    text-align: center;
+ }
+
+.shadow{
+    box-shadow: 0px 0px 6px 0px rgba(150,150,150,1);
+    border-radius: 6px;
+ }
+
+ h1.secondary {
+     color: crimson;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+ }
+ 
