@@ -4,12 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saludo</title>
     <script src="saludo.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
 </head>
 <body>
-    <b>Usuario:</b><br>
-    <input type="text" id="usuario">
-    <button onclick="saludar()">Saludar</button>
+    <div class="container w-50">
+    <div class="form-group mt-4">
+        <label for="usuario">Usuario:</label>
+        <input class="form-control" type="text" name="usuario" id="usuario">
+    </div>
+    <button onclick="saludar()" class="btn btn-primary">Saludar</button>
     <br>
-    <span id="mensaje"></span>
+    <div class="alert alert-info mt-4" id="mensaje" role="alert"></div>
+</div>
 </body>
 </html>
