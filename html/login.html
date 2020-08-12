@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 </head>
 <body class="main">
     <div class="login">
@@ -13,13 +14,14 @@
         <form>
             <div class="login-form">
                 <label for="user"><b>Usuario</b></label>
-                <input type="text" name="user">
+                <input type="text" name="user" id="user">
             </div>
             <div class="login-form">
                 <label for="password"><b>Password</b></label>
-                <input type="password" name="password">
+                <input type="password" name="password" id="password">
             </div>
-            <button class="send" type="submit">Enviar</button>
+            <button class="send" type="button" onclick="validar()">Enviar</button>
+            <p id="mensaje"></p>
         </form>
         <hr>
         <ul>
