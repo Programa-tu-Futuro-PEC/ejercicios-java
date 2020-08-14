@@ -1,0 +1,18 @@
+<h1 [class]="color">Bienvenido al {{nombreApp}}</h1>
+<hr>
+<p>Mi nombre es {{miNombre}}</p>
+<p>Trabajo en {{nombreTrabajo}} y mi cargo es {{cargo}}</p>
+<button (click)="sumarValor()">Sumar 1</button>
+<h2>{{valor}}</h2>
+
+<button (click)="aumentar()">+</button>
+<button (click)="disminuir()">-</button>
+<p [style.font-size.px]="size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum iste culpa assumenda omnis cumque rem, necessitatibus veniam, eligendi optio aliquid illo excepturi, illum nihil? Assumenda quaerat officia eius nisi.</p>
+
+<label for="nombre">Ingresa tu nombre:</label>
+<input type="password" name="nombre" [(ngModel)]="nombre">
+<p>Hola, {{nombre}}</p>
+<hr>
+<label for="pesos">Ingrese su dinero en pesos: </label>
+<input type="number" name="pesos" [(ngModel)]="pesos">
+<p>Puede comprar {{pesos/pesosPorDolar}} dólares</p>

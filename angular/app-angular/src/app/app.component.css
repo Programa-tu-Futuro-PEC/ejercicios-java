@@ -1,0 +1,18 @@
+.clase1 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clase2 {
+    color: blue;
+    font-style: italic;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-width: 0cm;
+    width: 7%;
+    height: 25px;
+    margin-left: 3px;
+}
