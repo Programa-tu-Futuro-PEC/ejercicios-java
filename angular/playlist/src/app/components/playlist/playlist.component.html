@@ -1,0 +1,34 @@
+<div>
+    <form>
+        <div>
+            <label for="cancion">Nombre Canción:</label>
+            <input type="text" name="cancion" id="cancion" [(ngModel)]="cancion">
+        </div>
+        <div>
+            <label for="album">Album:</label>
+            <input type="text" name="album" [(ngModel)]="album">
+        </div>
+        <div>
+            <label for="artista">Autor:</label>
+            <input type="text" name="artista" [(ngModel)]="autor">
+        </div>
+        <button type="reset" (click)="agregarCancion()">Agregar</button>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <th>Pos.</th>
+            <th>Canción</th>
+            <th>Álbum</th>
+            <th>Autor</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of canciones; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{c.cancion}}</td>
+                <td>{{c.album}}</td>
+                <td>{{c.autor}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

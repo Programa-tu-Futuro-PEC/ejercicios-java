@@ -6,30 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombreApp = 'Curso de Angular';
-  miNombre = 'Sebastián';
+  nombreApp: string = 'Curso de Angular';
+  miNombre: string = 'Sebastián';
   nombreTrabajo = 'Universidad de Chile';
   cargo = 'Profesor';
   color = 'clase2';
   tipo = 'Escriba acá';
   obligatorio = true;
-  valor = 0;
+  valor: number = 0;
   size = 8;
-  nombre = '';
-  pesos = 0;
-  pesosPorDolar = 793.0;
 
-  sumarValor() {
+  unidades: any[] = [
+    {
+      nombre: "Programacción en Java",
+      numero: 1
+    },{
+      nombre: "Desarrollo Web",
+      numero: 2
+    }
+  ]
+
+
+  sumarValor(): void {
     this.valor+=100000000000;
   }
 
-  aumentar(){
+  aumentar(): void {
     if(this.size < 25){
       this.size += 1;
     }
   }
 
-  disminuir(){
+  disminuir(): void{
     if(this.size > 8){
       this.size -= 1;
     }
