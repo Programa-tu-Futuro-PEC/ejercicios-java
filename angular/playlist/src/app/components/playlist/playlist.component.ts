@@ -6,16 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./playlist.component.css']
 })
 export class PlaylistComponent implements OnInit {
+  ngOnInit(): void {
+  }
 
   canciones = [];
   cancion: string = '';
   album: string = '';
   autor: string = '';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   agregarCancion(){
     if(this.cancion && this.autor && this.album){
