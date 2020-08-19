@@ -4,8 +4,7 @@ import { AppComponent } from './app.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
 
 const routes: Routes = [
-    {path:"", component:AppComponent},
-    {path:"playlist", component:PlaylistComponent}
+    { path:"playlist", component:PlaylistComponent }
 ];
 
 @NgModule({
