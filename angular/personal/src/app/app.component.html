@@ -49,3 +49,43 @@
     <mat-row *matRowDef="let fila; columns: columnasAMostrar"></mat-row>
   </mat-table>
 </div>
+<hr>
+<div style="width: 80%; margin: 2em auto;">
+  <mat-table [dataSource]="usuarios" style="margin: auto" class="mat-elevation-z8">
+    <ng-container matColumnDef="rut">
+      <mat-header-cell *matHeaderCellDef>
+        RUT
+      </mat-header-cell>
+      <mat-cell *matCellDef="let usuario">
+        {{usuario.rut}}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="nombres">
+      <mat-header-cell *matHeaderCellDef>
+        Nombres
+      </mat-header-cell>
+      <mat-cell *matCellDef="let usuario">
+        {{usuario.nombres}}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="apellido">
+      <mat-header-cell *matHeaderCellDef>
+        Apellidos
+      </mat-header-cell>
+      <mat-cell *matCellDef="let usuario">
+        {{usuario.apellido}}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="correo">
+      <mat-header-cell *matHeaderCellDef>
+        Correo Electrónico
+      </mat-header-cell>
+      <mat-cell *matCellDef="let usuario">
+        {{usuario.correo}}
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="columnasAMostrar2"></mat-header-row>
+    <mat-row *matRowDef="let fila; columns: columnasAMostrar2"></mat-row>
+  </mat-table>
+  <button mat-raised-button color="accent" (click)="toggleRut()">{{buttonLabel()}}</button>
+</div>
