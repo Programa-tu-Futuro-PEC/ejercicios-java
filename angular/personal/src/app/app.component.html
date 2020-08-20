@@ -6,3 +6,23 @@
     <a mat-button>Link 2</a>
   </mat-toolbar-row>
 </mat-toolbar>
+<div style="margin: 2em auto; padding: 2em; width: 50%;">
+  <h2>Contacto:</h2>
+  <form>
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Su Nombre:</mat-label>
+      <input matInput #nombre required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Su Correo:</mat-label>
+      <input matInput type="email" #email placeholder="ejemplo@correo.cl" required>
+      <mat-hint>Respetamos tu privacidad al no compartir tu correo</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Mensaje:</mat-label>
+      <textarea matInput #mensaje required></textarea>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Enviar</button>
+    <button type="reset" mat-raised-button color="warn" style="margin-left: 1em;">Limpiar Datos</button>
+  </form>
+</div>

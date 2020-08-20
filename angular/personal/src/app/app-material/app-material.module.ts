@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-
+import { MatCardModule } from '@angular/material/card'
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [],
@@ -13,7 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
   exports: [
     MatFormFieldModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatInputModule
   ]
 })
 export class AppMaterialModule { }
