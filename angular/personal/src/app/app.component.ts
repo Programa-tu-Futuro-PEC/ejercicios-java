@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'personal';
   yo: string;
-  pelicula: any;
+  lista = [
+    {id: 1, nombre: 'perrito'},
+    {id: 2, nombre: 'gatito'}
+  ]
+  columnasAMostrar = ['nombre']
 }

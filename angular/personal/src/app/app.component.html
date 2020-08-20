@@ -6,7 +6,7 @@
     <a mat-button>Link 2</a>
   </mat-toolbar-row>
 </mat-toolbar>
-<div style="margin: 2em auto; padding: 2em; width: 50%;">
+<div style="margin: 2em auto; padding: 2em; width: 50%;" class="mat-elevation-z8">
   <h2>Contacto:</h2>
   <form>
     <mat-form-field appearance="outline" style="width: 100%;">
@@ -25,4 +25,27 @@
     <button type="submit" mat-raised-button color="primary">Enviar</button>
     <button type="reset" mat-raised-button color="warn" style="margin-left: 1em;">Limpiar Datos</button>
   </form>
+</div>
+<hr>
+<div style="width: 50%; margin: 2em auto;">
+  <mat-table [dataSource]="lista" style="margin: auto" class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef>
+        Identificación
+      </mat-header-cell>
+      <mat-cell *matCellDef="let animalito">
+        {{animalito.id}}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="nombre">
+      <mat-header-cell *matHeaderCellDef>
+        Nombre Animalito
+      </mat-header-cell>
+      <mat-cell *matCellDef="let animalito">
+        {{animalito.nombre | uppercase }}
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="columnasAMostrar"></mat-header-row>
+    <mat-row *matRowDef="let fila; columns: columnasAMostrar"></mat-row>
+  </mat-table>
 </div>
