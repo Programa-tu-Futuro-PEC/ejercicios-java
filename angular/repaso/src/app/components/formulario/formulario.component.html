@@ -1,0 +1,27 @@
+<div style="width: 50%; margin: 2em auto">
+    <form class="mat-elevation-z4" style="padding: 1em;">
+        <h2 style="text-align: center;">Inscríbete acá</h2>
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput required placeholder="Nombre Completo">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Correo Electrónico</mat-label>
+            <input matInput type="email" required placeholder="correo@ejemplo.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Comuna</mat-label>
+            <mat-select required>
+                <mat-option value="" disabled>Seleccione comuna</mat-option>
+                <mat-option *ngFor="let comuna of comunas" [value]="comuna">
+                    {{comuna}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-checkbox color="primary" required >
+            He leído y estoy de acuerdo con las condiciones de uso y política de privacidad
+        </mat-checkbox><br>
+        <button mat-raised-button color="primary" style="margin: 1em 1em 0 0">Enviar</button>
+        <button type="reset" mat-raised-button color="warn" style="margin: 1em 1em 0 0">Limpiar</button>
+    </form>
+</div>
