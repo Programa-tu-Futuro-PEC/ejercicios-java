@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
 export class PostService {
 
   apiURL = 'https://jsonplaceholder.typicode.com/posts';
-  posts: any[];
 
   constructor(private http: HttpClient) { }
 

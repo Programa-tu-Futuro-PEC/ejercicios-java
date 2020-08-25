@@ -13,7 +13,11 @@ export class PostsComponent implements OnInit {
   posts: any[] = [];
 
   ngOnInit(): void {
-    this.postService.obtenerPosts().subscribe(posts => this.posts = posts);
+    this.postService.obtenerPosts()
+      .subscribe(
+        posts => this.posts = posts,
+        error => console.log(error)
+      );
   }
 
 }
